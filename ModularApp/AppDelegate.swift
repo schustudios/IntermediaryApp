@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import ModularAppDelegate
+import IntermediaryAppDelegate
 
 @UIApplicationMain
-class AppDelegate: ModularRemoteNotificationAppDelegate, ConfigureSceneAppDelegate {
+class AppDelegate: RemoteNotificationIntermediaryAppDelegate, ConfigureSceneIntermediaryAppDelegate {
 
     override init() {
         super.init([CoreModule(),
@@ -18,6 +18,5 @@ class AppDelegate: ModularRemoteNotificationAppDelegate, ConfigureSceneAppDelega
                     AppLifeCycleModule(),
                     NotificationModule()])
     }
-
 }
 
