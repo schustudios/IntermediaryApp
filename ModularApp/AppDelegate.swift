@@ -10,12 +10,13 @@ import UIKit
 import ModularAppDelegate
 
 @UIApplicationMain
-class AppDelegate: ModularAppDelegate, ConfigureSceneAppDelegate {
+class AppDelegate: ModularRemoteNotificationAppDelegate, ConfigureSceneAppDelegate {
 
     override init() {
         super.init([CoreModule(),
                     SceneSessionModule(),
-                    AppLifeCycleModule()])
+                    AppLifeCycleModule(),
+                    NotificationModule()])
     }
 
 }
