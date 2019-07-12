@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		442C03DC22D2CD0800CB0503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442C03DB22D2CD0800CB0503 /* Assets.xcassets */; };
 		442C03DF22D2CD0800CB0503 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442C03DE22D2CD0800CB0503 /* Preview Assets.xcassets */; };
 		442C03E222D2CD0800CB0503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442C03E022D2CD0800CB0503 /* LaunchScreen.storyboard */; };
+		445D7DFD22D2D5AE0019AF1E /* ModularAppDelegate in Frameworks */ = {isa = PBXBuildFile; productRef = 445D7DFC22D2D5AE0019AF1E /* ModularAppDelegate */; };
+		445D7E0022D2E1570019AF1E /* CoreModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D7DFF22D2E1570019AF1E /* CoreModule.swift */; };
+		445D7E0222D2EB630019AF1E /* SceneSessionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D7E0122D2EB630019AF1E /* SceneSessionModule.swift */; };
+		44B9B89722D80D5000CBF52E /* AppLifeCycleModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9B89622D80D5000CBF52E /* AppLifeCycleModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		442C03DE22D2CD0800CB0503 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		442C03E122D2CD0800CB0503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		442C03E322D2CD0800CB0503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445D7DFF22D2E1570019AF1E /* CoreModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreModule.swift; sourceTree = "<group>"; };
+		445D7E0122D2EB630019AF1E /* SceneSessionModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneSessionModule.swift; sourceTree = "<group>"; };
+		44B9B89622D80D5000CBF52E /* AppLifeCycleModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLifeCycleModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445D7DFD22D2D5AE0019AF1E /* ModularAppDelegate in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,7 @@
 		442C03D422D2CD0700CB0503 /* ModularApp */ = {
 			isa = PBXGroup;
 			children = (
+				445D7DFE22D2E1270019AF1E /* AppDelegateModules */,
 				442C03D522D2CD0700CB0503 /* AppDelegate.swift */,
 				442C03D722D2CD0700CB0503 /* SceneDelegate.swift */,
 				442C03D922D2CD0700CB0503 /* ContentView.swift */,
@@ -75,6 +84,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		445D7DFE22D2E1270019AF1E /* AppDelegateModules */ = {
+			isa = PBXGroup;
+			children = (
+				445D7DFF22D2E1570019AF1E /* CoreModule.swift */,
+				445D7E0122D2EB630019AF1E /* SceneSessionModule.swift */,
+				44B9B89622D80D5000CBF52E /* AppLifeCycleModule.swift */,
+			);
+			path = AppDelegateModules;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +110,9 @@
 			dependencies = (
 			);
 			name = ModularApp;
+			packageProductDependencies = (
+				445D7DFC22D2D5AE0019AF1E /* ModularAppDelegate */,
+			);
 			productName = ModularApp;
 			productReference = 442C03D222D2CD0700CB0503 /* ModularApp.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 442C03C922D2CD0700CB0503;
+			packageReferences = (
+				445D7DFB22D2D5AE0019AF1E /* XCRemoteSwiftPackageReference "ModularAppDelegate" */,
+			);
 			productRefGroup = 442C03D322D2CD0700CB0503 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -147,7 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				442C03D622D2CD0700CB0503 /* AppDelegate.swift in Sources */,
+				445D7E0222D2EB630019AF1E /* SceneSessionModule.swift in Sources */,
 				442C03D822D2CD0700CB0503 /* SceneDelegate.swift in Sources */,
+				445D7E0022D2E1570019AF1E /* CoreModule.swift in Sources */,
+				44B9B89722D80D5000CBF52E /* AppLifeCycleModule.swift in Sources */,
 				442C03DA22D2CD0700CB0503 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		445D7DFB22D2D5AE0019AF1E /* XCRemoteSwiftPackageReference "ModularAppDelegate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file:///Users/schu/Projects/ModularAppDelegate";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		445D7DFC22D2D5AE0019AF1E /* ModularAppDelegate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 445D7DFB22D2D5AE0019AF1E /* XCRemoteSwiftPackageReference "ModularAppDelegate" */;
+			productName = ModularAppDelegate;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 442C03CA22D2CD0700CB0503 /* Project object */;
 }
