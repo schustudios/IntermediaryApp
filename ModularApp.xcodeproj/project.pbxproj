@@ -15,10 +15,10 @@
 		442C03E222D2CD0800CB0503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442C03E022D2CD0800CB0503 /* LaunchScreen.storyboard */; };
 		445A51F422D817EC0093F6A4 /* NotificationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445A51F322D817EC0093F6A4 /* NotificationModule.swift */; };
 		445A51F822D823A30093F6A4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445A51F722D823A30093F6A4 /* HealthKit.framework */; };
-		445A51FD22D82D4F0093F6A4 /* IntermediaryAppDelegate in Frameworks */ = {isa = PBXBuildFile; productRef = 445A51FC22D82D4F0093F6A4 /* IntermediaryAppDelegate */; };
 		445D7E0022D2E1570019AF1E /* CoreModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D7DFF22D2E1570019AF1E /* CoreModule.swift */; };
 		445D7E0222D2EB630019AF1E /* SceneSessionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D7E0122D2EB630019AF1E /* SceneSessionModule.swift */; };
 		44B9B89722D80D5000CBF52E /* AppLifeCycleModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9B89622D80D5000CBF52E /* AppLifeCycleModule.swift */; };
+		44C93AEE22F11E8D0047B482 /* IntermediaryAppDelegate in Frameworks */ = {isa = PBXBuildFile; productRef = 44C93AED22F11E8D0047B482 /* IntermediaryAppDelegate */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				445A51FD22D82D4F0093F6A4 /* IntermediaryAppDelegate in Frameworks */,
+				44C93AEE22F11E8D0047B482 /* IntermediaryAppDelegate in Frameworks */,
 				445A51F822D823A30093F6A4 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,7 +128,7 @@
 			);
 			name = ModularApp;
 			packageProductDependencies = (
-				445A51FC22D82D4F0093F6A4 /* IntermediaryAppDelegate */,
+				44C93AED22F11E8D0047B482 /* IntermediaryAppDelegate */,
 			);
 			productName = ModularApp;
 			productReference = 442C03D222D2CD0700CB0503 /* ModularApp.app */;
@@ -159,7 +159,7 @@
 			);
 			mainGroup = 442C03C922D2CD0700CB0503;
 			packageReferences = (
-				445A51FB22D82D4F0093F6A4 /* XCRemoteSwiftPackageReference "ModularAppDelegate" */,
+				44C93AEC22F11E8D0047B482 /* XCRemoteSwiftPackageReference "IntermediaryAppDelegate" */,
 			);
 			productRefGroup = 442C03D322D2CD0700CB0503 /* Products */;
 			projectDirPath = "";
@@ -392,20 +392,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		445A51FB22D82D4F0093F6A4 /* XCRemoteSwiftPackageReference "ModularAppDelegate" */ = {
+		44C93AEC22F11E8D0047B482 /* XCRemoteSwiftPackageReference "IntermediaryAppDelegate" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "file:///Users/schu/Projects/ModularAppDelegate";
+			repositoryURL = "https://github.com/steg132/IntermediaryAppDelegate.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		445A51FC22D82D4F0093F6A4 /* IntermediaryAppDelegate */ = {
+		44C93AED22F11E8D0047B482 /* IntermediaryAppDelegate */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 445A51FB22D82D4F0093F6A4 /* XCRemoteSwiftPackageReference "ModularAppDelegate" */;
+			package = 44C93AEC22F11E8D0047B482 /* XCRemoteSwiftPackageReference "IntermediaryAppDelegate" */;
 			productName = IntermediaryAppDelegate;
 		};
 /* End XCSwiftPackageProductDependency section */
