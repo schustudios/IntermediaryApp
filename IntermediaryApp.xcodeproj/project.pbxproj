@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		442C03D222D2CD0700CB0503 /* ModularApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		442C03D222D2CD0700CB0503 /* IntermediaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntermediaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		442C03D522D2CD0700CB0503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		442C03D722D2CD0700CB0503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		442C03D922D2CD0700CB0503 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,7 +31,7 @@
 		442C03E122D2CD0800CB0503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		442C03E322D2CD0800CB0503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		445A51F322D817EC0093F6A4 /* NotificationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModule.swift; sourceTree = "<group>"; };
-		445A51F522D823A30093F6A4 /* ModularApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ModularApp.entitlements; sourceTree = "<group>"; };
+		445A51F522D823A30093F6A4 /* IntermediaryApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IntermediaryApp.entitlements; sourceTree = "<group>"; };
 		445A51F722D823A30093F6A4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		445D7DFF22D2E1570019AF1E /* CoreModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreModule.swift; sourceTree = "<group>"; };
 		445D7E0122D2EB630019AF1E /* SceneSessionModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneSessionModule.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		442C03C922D2CD0700CB0503 = {
 			isa = PBXGroup;
 			children = (
-				442C03D422D2CD0700CB0503 /* ModularApp */,
+				442C03D422D2CD0700CB0503 /* IntermediaryApp */,
 				442C03D322D2CD0700CB0503 /* Products */,
 				445A51F622D823A30093F6A4 /* Frameworks */,
 			);
@@ -63,15 +63,15 @@
 		442C03D322D2CD0700CB0503 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				442C03D222D2CD0700CB0503 /* ModularApp.app */,
+				442C03D222D2CD0700CB0503 /* IntermediaryApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		442C03D422D2CD0700CB0503 /* ModularApp */ = {
+		442C03D422D2CD0700CB0503 /* IntermediaryApp */ = {
 			isa = PBXGroup;
 			children = (
-				445A51F522D823A30093F6A4 /* ModularApp.entitlements */,
+				445A51F522D823A30093F6A4 /* IntermediaryApp.entitlements */,
 				445D7DFE22D2E1270019AF1E /* AppDelegateModules */,
 				442C03D522D2CD0700CB0503 /* AppDelegate.swift */,
 				442C03D722D2CD0700CB0503 /* SceneDelegate.swift */,
@@ -81,7 +81,7 @@
 				442C03E322D2CD0800CB0503 /* Info.plist */,
 				442C03DD22D2CD0800CB0503 /* Preview Content */,
 			);
-			path = ModularApp;
+			path = IntermediaryApp;
 			sourceTree = "<group>";
 		};
 		442C03DD22D2CD0800CB0503 /* Preview Content */ = {
@@ -114,9 +114,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		442C03D122D2CD0700CB0503 /* ModularApp */ = {
+		442C03D122D2CD0700CB0503 /* IntermediaryApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 442C03E622D2CD0800CB0503 /* Build configuration list for PBXNativeTarget "ModularApp" */;
+			buildConfigurationList = 442C03E622D2CD0800CB0503 /* Build configuration list for PBXNativeTarget "IntermediaryApp" */;
 			buildPhases = (
 				442C03CE22D2CD0700CB0503 /* Sources */,
 				442C03CF22D2CD0700CB0503 /* Frameworks */,
@@ -126,12 +126,12 @@
 			);
 			dependencies = (
 			);
-			name = ModularApp;
+			name = IntermediaryApp;
 			packageProductDependencies = (
 				44C93AED22F11E8D0047B482 /* IntermediaryAppDelegate */,
 			);
 			productName = ModularApp;
-			productReference = 442C03D222D2CD0700CB0503 /* ModularApp.app */;
+			productReference = 442C03D222D2CD0700CB0503 /* IntermediaryApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -149,7 +149,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 442C03CD22D2CD0700CB0503 /* Build configuration list for PBXProject "ModularApp" */;
+			buildConfigurationList = 442C03CD22D2CD0700CB0503 /* Build configuration list for PBXProject "IntermediaryApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -165,7 +165,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				442C03D122D2CD0700CB0503 /* ModularApp */,
+				442C03D122D2CD0700CB0503 /* IntermediaryApp */,
 			);
 		};
 /* End PBXProject section */
@@ -330,17 +330,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ModularApp/ModularApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = IntermediaryApp/IntermediaryApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "ModularApp/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "IntermediaryApp/Preview\\ Content";
 				DEVELOPMENT_TEAM = X3MLZ8USDM;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ModularApp/Info.plist;
+				INFOPLIST_FILE = IntermediaryApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.schustudios.ModularApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.schustudios.IntermediaryApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,17 +351,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ModularApp/ModularApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = IntermediaryApp/IntermediaryApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "ModularApp/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "IntermediaryApp/Preview\\ Content";
 				DEVELOPMENT_TEAM = X3MLZ8USDM;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ModularApp/Info.plist;
+				INFOPLIST_FILE = IntermediaryApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.schustudios.ModularApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.schustudios.IntermediaryApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -371,7 +371,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		442C03CD22D2CD0700CB0503 /* Build configuration list for PBXProject "ModularApp" */ = {
+		442C03CD22D2CD0700CB0503 /* Build configuration list for PBXProject "IntermediaryApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				442C03E422D2CD0800CB0503 /* Debug */,
@@ -380,7 +380,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		442C03E622D2CD0800CB0503 /* Build configuration list for PBXNativeTarget "ModularApp" */ = {
+		442C03E622D2CD0800CB0503 /* Build configuration list for PBXNativeTarget "IntermediaryApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				442C03E722D2CD0800CB0503 /* Debug */,
